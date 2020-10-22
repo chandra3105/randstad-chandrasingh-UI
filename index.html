@@ -6,82 +6,271 @@
   <link rel="stylesheet" href="./css/style.css" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-
   <link rel="icon" href="https://d1vwxdpzbgdqj.cloudfront.net/favicon.ico" type="image/x-icon">
-  <title>Great Learning Task</title>
+  <title>Tavant UI</title>
 </head>
 <body>
-  
-<div>
-  <header class="main-container">
-    <div class="flex-container justify-cont-between align-center header">
-      <div class="logo">
-        <a href="#">Logo</a>
+  <div>
+    <header class="main-container">
+      <div class="flex-container justify-cont-between align-center header">
+        <div class="logo">
+          <a href="#">Logo</a>
+        </div>
+        <div class="dashboard-cont">
+          <span class="mr-3">Dashboard</span>
+          <span class="user-profile">Welcome, John</span>
+        </div>
       </div>
-      <div class="dashboard-cont">
-        <span class="mr-3">Dashboard</span>
-        <span class="user-profile">Welcome, John</span>
+    </header>
+    <section class="info-bg">
+      <div class="main-container">
+        <div class="flex-container justify-cont-between flex-column">
+          <div>
+            <div class="small-sub-title">Loan No.</div>
+            <div class="user-setailes">1234567897</div>
+          </div>
+          <div class="small-ctr-mt">
+            <div class="small-sub-title">Property Address</div>
+            <div class="user-setailes">3965 Freedom Circle, Santa Clara, CA 95014, USA</div>
+          </div>
+          <div class="small-ctr-mt">
+            <div class="small-sub-title">Loan Purpose</div>
+            <div class="user-setailes">purchase</div>
+          </div>
+          <div class="small-ctr-mt">
+            <div class="small-sub-title">Loan Amount</div>
+            <div class="user-setailes">&#36;250,000</div>
+          </div>
+          <div class="bar-mt small-ctr-mt">
+            <div class="bar">
+              <div class="child-bar" id="child"></div>
+            </div>
+            <div class="parent-elemet">
+              <span class="persen-tooltip">
+                <span id="tooltipValue">0 %</span>
+                <span class="parent-elemet">
+                  <span class="arrow-tooltip"></span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
-  <label class="switch">
-    <input type="checkbox">
-    <span class="slider round"></span>
-  </label>
-  <!-- =================== -->
-  <section></section>
-   <!-- =================== -->
-  <section></section>
-</div>
-
-
-
-
-
-
-
-
-
-<!-- ========================================================================== -->
-<div class="main-container">
-  <label for="vehicle1" onclick="tabButClick('abcd')"><input type="checkbox" id="myCheck" name="vehicle1" value="Bike">
-    I have a bike1</label>
-  
-  <label for="vehicle2" onclick="tabButClick('xyz')"><input type="checkbox" id="myCheck1" name="vehicle2" value="car"> I
-    have a bike 2</label>
-  
-  <label for="vehicle3" onclick="tabButClick('three')"><input type="checkbox" id="myCheck3" name="vehicle3"
-      value="car1"> I have a bike 3</label>
-  
-  <label for="vehicle4" onclick="tabButClick('four')"><input type="checkbox" id="myCheck4" name="vehicle4"
-      value="Bike4"> I have a bike 4</label>
-  
-  <label for="vehicle5" onclick="tabButClick('five')"><input type="checkbox" id="myCheck5" name="vehicle5"
-      value="Bike5"> I have a bike 5</label>
-  
-  <label for="vehicle6" onclick="tabButClick('six')"><input type="checkbox" id="myCheck6" name="vehicle6" value="Bike6">
-    I have a bike 6</label>
-  
-  <label for="vehicle7" onclick="tabButClick('seven')"><input type="checkbox" id="myCheck7" name="vehicle7" value="Bike7">
-    I have a bike 7</label>
-  
-  
-  
-  <div class="bar">
-    <div class="child-bar" id="child"></div>
+    </section>
+    <section class="main-container article-container">
+      <div class="flex-container wrap-flex flex-column justify-cont-center justify-cont-left ">
+        <div class="card-container">
+          <label for="getStartes" onclick="tabButClick('getStartes')">
+            <input type="checkbox" id="getStartes" class="check-input" name="getStartes" value="getStartes">
+            <div class="flex-container flex-column-md">
+              <div class="txt-right" id="activeIcon">
+                <span>
+                  <img src="./assets/exclamation.png" alt="inactive icon" class="exclamation-dark" />
+                </span>
+                <span>
+                  <img src="./assets/exclamation-white.png" alt="inactive icon" class="exclamation-white" />
+                </span>
+                <span>
+                  <img src="./assets/checked-inactive.png" alt="inactive icon" class="inactive-icon" />
+                </span>
+                <span>
+                  <img src="./assets/checked-active.png" alt="inactive icon" class="active-icon" />
+                </span>
+              </div>
+              <div class="txt-center">
+                <img src="./assets/location.png" alt="location" class="card-center-img" />
+                <div class="padd-r-l">
+                  <div class="card-sub-title">Get Started</div>
+                  <div class="card-txt">&#40;100&#37; completed&#41; </div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="card-container">
+          <label for="property" onclick="tabButClick('property')">
+            <input type="checkbox" id="property" class="check-input" name="property" value="property">
+            <div class="flex-container flex-column-md">
+              <div class="txt-right" id="propertyActiveIcon">
+                <span>
+                  <img src="./assets/exclamation.png" alt="inactive icon" class="exclamation-dark" />
+                </span>
+                <span>
+                  <img src="./assets/exclamation-white.png" alt="inactive icon" class="exclamation-white" />
+                </span>
+                <span>
+                  <img src="./assets/checked-inactive.png" alt="inactive icon" class="inactive-icon" />
+                </span>
+                <span>
+                  <img src="./assets/checked-active.png" alt="inactive icon" class="active-icon" />
+                </span>
+              </div>
+              <div class="txt-center">
+                <img src="./assets/property.png" alt="location" class="card-center-img" />
+                <div class="padd-r-l">
+                  <div class="card-sub-title">Property</div>
+                  <div class="card-txt">&#40;Not Started&#41; </div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="card-container">
+          <label for="income" onclick="tabButClick('income')">
+            <input type="checkbox" id="income" class="check-input" name="income" value="income">
+            <div class="flex-container flex-column-md">
+              <div class="txt-right" id="incomeActiveIcon">
+                <span>
+                  <img src="./assets/exclamation.png" alt="inactive icon" class="exclamation-dark" />
+                </span>
+                <span>
+                  <img src="./assets/exclamation-white.png" alt="inactive icon" class="exclamation-white" />
+                </span>
+                <span>
+                  <img src="./assets/checked-inactive.png" alt="inactive icon" class="inactive-icon" />
+                </span>
+                <span>
+                  <img src="./assets/checked-active.png" alt="inactive icon" class="active-icon" />
+                </span>
+              </div>
+              <div class="txt-center">
+                <img src="./assets/income.png" alt="location" class="card-center-img" />
+                <div class="padd-r-l">
+                  <div class="card-sub-title">Income</div>
+                  <div class="card-txt">&#40;Not Started&#41; </div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="card-container">
+          <label for="assets" onclick="tabButClick('assets')">
+            <input type="checkbox" id="assets" class="check-input" name="assets" value="assets">
+            <div class="flex-container flex-column-md">
+              <div class="txt-right" id="assetsActiveIcon">
+                <span>
+                  <img src="./assets/exclamation.png" alt="inactive icon" class="exclamation-dark" />
+                </span>
+                <span>
+                  <img src="./assets/exclamation-white.png" alt="inactive icon" class="exclamation-white" />
+                </span>
+                <span>
+                  <img src="./assets/checked-inactive.png" alt="inactive icon" class="inactive-icon" />
+                </span>
+                <span>
+                  <img src="./assets/checked-active.png" alt="inactive icon" class="active-icon" />
+                </span>
+              </div>
+              <div class="txt-center">
+                <img src="./assets/assets.png" alt="location" class="card-center-img" />
+                <div class="padd-r-l">
+                  <div class="card-sub-title">Assets</div>
+                  <div class="card-txt">&#40;50&#37; completed&#41; </div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="card-container">
+          <label for="realEstate" onclick="tabButClick('realEstate')">
+            <input type="checkbox" id="realEstate" class="check-input" name="realEstate" value="realEstate">
+            <div class="flex-container flex-column-md">
+              <div class="txt-right" id="realEstateActiveIcon">
+                <span>
+                  <img src="./assets/exclamation.png" alt="inactive icon" class="exclamation-dark" />
+                </span>
+                <span>
+                  <img src="./assets/exclamation-white.png" alt="inactive icon" class="exclamation-white" />
+                </span>
+                <span>
+                  <img src="./assets/checked-inactive.png" alt="inactive icon" class="inactive-icon" />
+                </span>
+                <span>
+                  <img src="./assets/checked-active.png" alt="inactive icon" class="active-icon" />
+                </span>
+              </div>
+              <div class="txt-center">
+                <img src="./assets/real-estate.png" alt="real-estate" class="card-center-img" />
+                <div class="padd-r-l">
+                  <div class="card-sub-title">Real Estate</div>
+                  <div class="card-txt">&#40;50&#37; completed&#41; </div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="card-container">
+          <label for="declaration" onclick="tabButClick('declaration')">
+            <input type="checkbox" id="declaration" class="check-input" name="declaration" value="declaration">
+            <div class="flex-container flex-column-md">
+              <div class="txt-right" id="declarationActiveIcon">
+                <span>
+                  <img src="./assets/exclamation.png" alt="inactive icon" class="exclamation-dark" />
+                </span>
+                <span>
+                  <img src="./assets/exclamation-white.png" alt="inactive icon" class="exclamation-white" />
+                </span>
+                <span>
+                  <img src="./assets/checked-inactive.png" alt="inactive icon" class="inactive-icon" />
+                </span>
+                <span>
+                  <img src="./assets/checked-active.png" alt="inactive icon" class="active-icon" />
+                </span>
+              </div>
+              <div class="txt-center">
+                <img src="./assets/declarations.png" alt="real-estate" class="card-center-img" />
+                <div class="padd-r-l">
+                  <div class="card-sub-title">Declaration</div>
+                  <div class="card-txt">&#40;90&#37; completed&#41; </div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="card-container">
+          <label for="EConsent" onclick="tabButClick('EConsent')">
+            <input type="checkbox" id="EConsent" class="check-input" name="EConsent" value="EConsent">
+            <div class="flex-container flex-column-md">
+              <div class="txt-right" id="EConsentActiveIcon">
+                <span>
+                  <img src="./assets/exclamation.png" alt="inactive icon" class="exclamation-dark" />
+                </span>
+                <span>
+                  <img src="./assets/exclamation-white.png" alt="inactive icon" class="exclamation-white" />
+                </span>
+                <span>
+                  <img src="./assets/checked-inactive.png" alt="inactive icon" class="inactive-icon" />
+                </span>
+                <span>
+                  <img src="./assets/checked-active.png" alt="inactive icon" class="active-icon" />
+                </span>
+              </div>
+              <div class="txt-center">
+                <img src="./assets/e-concent.png" alt="real-estate" class="card-center-img" />
+                <div class="padd-r-l">
+                  <div class="card-sub-title">E-Consent</div>
+                  <div class="card-txt">&#40;Not Started&#41;</div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="btn-cont">
+        <button id="submit" class="submit-btn" disabled>Submit Application</button>
+      </div>
+    </section>
+    <footer>
+      <div class="main-container">
+        <div class="flex-container justify-cont-between align-center">
+          <div class="foot-txt">All Rights Reserved &#169; Tavant Technologies 2018 | Privacy Policy | Disclaimer</div>
+          <div>
+            <img src="./assets/accreditation.png" alt="footer img" class="foot-img" />
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
-</div>
-
-
-
-<!-- ============================================================================= -->
-
-
-
-
-
-
-
   <script src="./js/javascript.js" type="text/javascript"></script>
 </body>
 </html>
